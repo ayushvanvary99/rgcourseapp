@@ -35,7 +35,7 @@ export default class Courses extends Component {
                                      data-item-id={node.id}
                                      data-item-name={node.title}
                                      data-item-price={node.price}
-                                     data-item-url="https://courses.learncodeonline.in/"
+                                     data-item-url="https://ecommproject.netlify.app/"
                                      data-item-image={node.image.fixed.src}
                                     className="btn btn-warning snipcart-add-item">Join Now</button>
                                 </div>
