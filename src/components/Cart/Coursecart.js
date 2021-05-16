@@ -19,7 +19,7 @@ export default class Courses extends Component {
                         return(
                             <div
                                 key={node.id}
-                                className="col-11 col-md-6 d-flex mx-auto"
+                                className="col-11 col-md-6 d-flex my-3 mx-auto"
                             >
                                 <Img fixed={node.image.fixed}/>
                                 <div className="flex-grow-1 px-3">
