@@ -7,29 +7,28 @@ import Seo from "../components/seo"
 import HeroSection from "../components/Reusable/HeroSection"
 import Infoblock from "../components/Reusable/Infoblock"
 import Dualinfoblock from "../components/Reusable/Dualinfoblock"
-import Coursecart from "../components/Cart/Coursecart"
+import Teamphotosection from "../components/About/Teamphotosection"
 
-const IndexPage = ({data}) => (
+const AboutPage = ({data}) => (
   <Layout>
     <Seo title="Home" />
     <HeroSection
     img={data.img.childImageSharp.fluid}
-    title="I write Code"
-    subtitle="LearnCodeOnline.in"
-    heroclass="hero-background"
+    title="About Learn Code Online"
+    subtitle=""
+    heroclass="about-background"
     />
-    <Infoblock heading="About Us"/>
-    <Coursecart courses={data.courses}/>
-    <Dualinfoblock heading="Our Team"
+     <Dualinfoblock heading="Message From CEO"
     img="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     />
-    
+    <Infoblock heading="Our Vision"/>
+    <Teamphotosection/>
   </Layout>
 )
 
 export const query = graphql`
 {
- img: file(relativePath: { eq: "heromain.png" }) {
+ img: file(relativePath: { eq: "about.png" }) {
     childImageSharp {
       fluid 
       {
@@ -38,26 +37,7 @@ export const query = graphql`
       
     }
   }
-
-courses:allContentfulCourses{
-  edges{
-    node{
-      id
-      title
-      price
-      category
-      description{
-        description
-      }
-      image{
-         fixed(width:200, height:120){
-          ...GatsbyContentfulFixed_tracedSVG
-        }
-      }
-    }
-  }
-}
 }
 `
 
-export default IndexPage
+export default AboutPage
