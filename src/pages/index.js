@@ -16,7 +16,8 @@ const IndexPage = ({data}) => (
     img={data.img.childImageSharp.fluid}
     title="I write Code"
     subtitle="LearnCodeOnline.in"
-    heroclass="hero-background"
+    heroclass="
+    Integral Universityhttps://www.iul.ac.in"
     />
     <Infoblock heading="About Us"/>
     <Coursecart courses={data.courses}/>
