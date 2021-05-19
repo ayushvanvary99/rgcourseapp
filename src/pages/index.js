@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
     <HeroSection
     img={data.img.childImageSharp.fluid}
     title="I write Code"
-    subtitle="iul.ac.in"
+    subtitle="Learn Code Online"
     heroclass="hero-background"
     />
     <Infoblock heading="About Us"/>
