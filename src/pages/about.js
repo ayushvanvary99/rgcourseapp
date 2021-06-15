@@ -21,7 +21,8 @@ const AboutPage = ({data}) => (
      <Dualinfoblock heading="Message From CEO"
     img="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     />
-    <Infoblock heading="Our Vision"/>
+    <Infoblock heading="Our Vision"
+    link="/about"/>
     <Teamphotosection/>
   </Layout>
 )
